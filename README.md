@@ -63,6 +63,14 @@ Only for use with Linux & Android
 [  5]   0.00-23.15  sec  0.00 Bytes  0.00 bits/sec                  receiver
 ```
 
+### Befor Installing
+```
+sudo apt-get install linux-headers-$(uname -r)
+sudo apt install bc
+sudo apt-get install build-essential
+sudo apt-get install libelf-dev
+```
+
 ### DKMS
 This driver can be installed using [DKMS]. This is a system which will automatically recompile and install a kernel module when a new kernel gets installed or updated. To make use of DKMS, install the `dkms` package, which on Debian (based) systems is done like this:
 ```
